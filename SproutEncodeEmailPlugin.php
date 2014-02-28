@@ -2,16 +2,16 @@
 
 namespace Craft;
 
-class EncodeEmailPlugin extends BasePlugin
+class SproutEncodeEmailPlugin extends BasePlugin
 {   
     public function getName()
     {
-        return Craft::t('Encode Email');
+        return Craft::t('Sprout Encode Email');
     }
 
     public function getVersion()
     {
-        return '1.0';
+        return '0.7.0';
     }
 
     public function getDeveloper()
@@ -34,8 +34,8 @@ class EncodeEmailPlugin extends BasePlugin
      */
     public function addTwigExtension()
     {
-        Craft::import('plugins.encodeemail.twigextensions.EncodeEmailTwigExtension');
+        Craft::import('plugins.sproutencodeemail.twigextensions.SproutEncodeEmailTwigExtension');
        
-        return new EncodeEmailTwigExtension();
+        return new SproutEncodeEmailTwigExtension();
     }
 }
