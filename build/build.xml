@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="Sprout Encode Email" default="build">
+<project name="Sprout Encode Email" default="release">
 
     <property name="pluginFileName" value="SproutEncodeEmail" />
     <property name="pluginName" value="sproutencodeemail" />
-    <property name="pluginVersion" value="0.7.0" />
+    <property name="pluginVersion" value="1.0.1" />
 
-    <target name="release" depends="build">
+    <target name="release">
         <echo msg="Preparing release distro..." />
         <zip destfile="${pluginFileName}-${pluginVersion}.zip">
             <fileset dir="../../">
