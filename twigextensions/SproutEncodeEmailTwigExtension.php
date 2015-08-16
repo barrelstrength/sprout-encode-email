@@ -1,5 +1,4 @@
 <?php
-
 namespace Craft;
 
 use Twig_Extension;
@@ -14,7 +13,7 @@ class SproutEncodeEmailTwigExtension extends Twig_Extension
 
     public function getFilters()
     {
-        // @TODO - explore the markdown class in Yii.  
+        // @TODO - explore the markdown class in Yii.
         // It may also have several filters for this type of use case
         return array(
             'encode'    => new Twig_Filter_Method($this, 'encode', array('is_safe' => array('html'))),

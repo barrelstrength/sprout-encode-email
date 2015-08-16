@@ -1,5 +1,4 @@
 <?php
-
 namespace Craft;
 
 class SproutEncodeEmailPlugin extends BasePlugin
