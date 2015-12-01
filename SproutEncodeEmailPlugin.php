@@ -8,6 +8,11 @@ class SproutEncodeEmailPlugin extends BasePlugin
         return Craft::t('Sprout Encode Email');
     }
 
+    public function getDescription()
+    {
+        return 'Protect email addresses in your templates from robots.';
+    }
+
     public function getVersion()
     {
         return '0.7.0';
@@ -21,6 +26,16 @@ class SproutEncodeEmailPlugin extends BasePlugin
     public function getDeveloperUrl()
     {
         return 'http://barrelstrengthdesign.com';
+    }
+
+    public function getDocumentationUrl()
+    {
+        return 'http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/docs';
+    }
+
+    public function getReleaseFeedUrl()
+    {
+        return 'http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/releases.json';
     }
 
     public function hasCpSection()
