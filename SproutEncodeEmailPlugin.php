@@ -35,7 +35,7 @@ class SproutEncodeEmailPlugin extends BasePlugin
 
     public function getReleaseFeedUrl()
     {
-        return 'http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/releases.json';
+        return 'https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/releases.json';
     }
 
     public function hasCpSection()
