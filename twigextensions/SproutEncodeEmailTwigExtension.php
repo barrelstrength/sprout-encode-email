@@ -6,6 +6,7 @@ use Twig_Filter_Method;
 
 class SproutEncodeEmailTwigExtension extends Twig_Extension
 {
+	private $count = 0;
     public function getName()
     {
         return 'Encode Email';
@@ -68,8 +69,20 @@ class SproutEncodeEmailTwigExtension extends Twig_Extension
         // rot13 encryption
         $encryptedString = str_replace('"','\"',str_rot13($string));
 
+		// Add count for multiple encoded strings in a page
+		$count = $this->count++;
+
+		//
+		$ajax = (craft()->request->isAjaxRequest()) ? 'ajax-' : '';
+
         // build the string we'll output to the page
-        $string = '<script type="text/javascript">document.write("' . $encryptedString . '".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>';
+        $string = '
+		<div id="sproutencodeemailRot13Container-' . $ajax . $count . '"></div>
+		<script type="text/javascript">
+			var sproutencodeemailRot13String = "' . $encryptedString . '";
+			var sproutencodeemailRot13 = sproutencodeemailRot13String.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+			document.getElementById("sproutencodeemailRot13Container-' . $ajax . $count . '").innerHTML = sproutencodeemailRot13;
+        </script>';
         
         return $string;   
     }
