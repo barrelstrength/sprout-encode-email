@@ -31,6 +31,7 @@ class SproutEncodeEmailTwigExtension extends Twig_Extension
 	 */
 	public function encode($string)
 	{
+
 		return $this->_encodeStringRot13($string);
 	}
 
@@ -64,7 +65,7 @@ class SproutEncodeEmailTwigExtension extends Twig_Extension
 	 * @return mixed          An encoded string and javascript decoder function
 	 */
 	private function _encodeStringRot13($string)
-	{
+	{;
 		$rot13encryptedString = str_replace('"', '\"', str_rot13($string));
 
 		$uniqueId = uniqid();
@@ -74,7 +75,7 @@ class SproutEncodeEmailTwigExtension extends Twig_Extension
 		$encodeId = 'sproutencodeemail-' . $uniqueId . '-' . $countId . $ajaxId;
 
 		$encodedString = '
-	<div id="' . $encodeId . '"></div>
+	<span id="' . $encodeId . '"></span>
 	<script type="text/javascript">
 		var sproutencodeemailRot13String = "' . $rot13encryptedString . '";
 		var sproutencodeemailRot13 = sproutencodeemailRot13String.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
