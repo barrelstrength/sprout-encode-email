@@ -15,7 +15,7 @@ class SproutEncodeEmailPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.2.1';
+        return '1.2.2';
     }
 
     public function getDeveloper()
