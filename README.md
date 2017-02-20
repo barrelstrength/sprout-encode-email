@@ -1,30 +1,37 @@
-Sprout Encode Email!
+# Sprout Encode Email plugin for Craft CMS 3.x
 
-Here are some online resources you might find useful:
+Protect email addresses in your templates from robots.
 
+![Screenshot](resources/img/plugin-logo.png)
 
-Sprout Encode Email Docs
-------------------------------------------------------------
-Code examples, tags, common questions:
-http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email
+## Installation
 
+To install Sprout Encode Email, follow these steps:
 
-Sprout Encode Email Updates
-------------------------------------------------------------
-http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/updates
+1. Download & unzip the file and place the `sproutencodeemail` directory into your `craft/plugins` directory
+2.  -OR- do a `git clone ???` directly into your `craft/plugins` folder.  You can then update it with `git pull`
+3.  -OR- install with Composer via `composer require /sprout-encode-email`
+4. Install plugin in the Craft Control Panel under Settings > Plugins
+5. The plugin folder should be named `sproutencodeemail` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
 
+Sprout Encode Email works on Craft 3.x.
 
-Sprout Encode Email
-------------------------------------------------------------
+## Sprout Encode Email Overview
 
-Via Craft Stack Exchange: Tag your questions with `plugin-sproutencodeemail`:
-https://craftcms.stackexchange.com/
+-Insert text here-
 
-Via Email:
-Send us a note at: sprout@barrelstrengthdesign.com
+## Configuring Sprout Encode Email
 
+-Insert text here-
 
-Sprout Encode Email License Terms
-------------------------------------------------------------
-Use of Sprout Encode Email is subject to the license agreement available here:
-http://sprout.barrelstrengthdesign.com/license
+## Using Sprout Encode Email
+
+-Insert text here-
+
+## Sprout Encode Email Roadmap
+
+Some things to do, and ideas for potential features:
+
+* Release it
+
+Brought to you by [Barrel Strength Design](http://barrelstrengthdesign.com)
