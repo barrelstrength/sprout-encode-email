@@ -1,6 +1,3 @@
-
-<img src="https://sprout.barrelstrengthdesign.com/content/plugins/sprout-icon.svg" width="48">
-
 Sprout Encode Email
 ===================
 
@@ -35,3 +32,9 @@ See the [Sprout Encode Email](https://sprout.barrelstrengthdesign.com/craft-plug
 
 - [Send a Support Ticket](https://sprout.barrelstrengthdesign.com/craft-plugins/request/support) via the Sprout Website.
 - [Create an issue](https://github.com/barrelstrength/craft-sprout-encode-email/issues) on Github.
+
+----
+
+<a href="https://sprout.barrelstrengthdesign.com" target="_blank">
+  <img src="https://sprout.barrelstrengthdesign.com/content/plugins/sprout-icon.svg" width="72">
+</a>
