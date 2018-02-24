@@ -40,7 +40,10 @@
     "documentationUrl": "https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email",
     "changelogUrl": "https://raw.githubusercontent.com/barrelstrength/sprout-encode-email/master/CHANGELOG.md",
     "downloadUrl": "https://github.com/barrelstrength/sprout-encode-email/archive/master.zip",
-    "class": "barrelstrength\\sproutencodeemail\\SproutEncodeEmail"
+    "class": "barrelstrength\\sproutencodeemail\\SproutEncodeEmail",
+    "components": {
+      "app": "barrelstrength\\sproutencodeemail\\services\\App"
+    }
   }
 }
 
