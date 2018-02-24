@@ -1,9 +1,6 @@
-Sprout Encode Email
-===================
+# Sprout Encode Email
 
 Encode the email addresses in your templates so they can't be harvested by evil spam bots.
-
-----
 
 ## Usage
 
@@ -22,11 +19,9 @@ The `entities` filter encodes your content into HTML Entities.
 <a href='{{ "mailto:you@example.com" | entities }}'>Your Name</a>
 ```
 
-----
-
 ## Documentation
 
-See the [Sprout Encode Email](https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/docs) for documentation, guides, and additional resources. 
+See the [Sprout Website](https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/docs) for documentation, guides, and additional resources. 
 
 ## Support
 
@@ -36,5 +31,5 @@ See the [Sprout Encode Email](https://sprout.barrelstrengthdesign.com/craft-plug
 <br>
 
 <a href="https://sprout.barrelstrengthdesign.com" target="_blank">
-  <img src="https://sprout.barrelstrengthdesign.com/content/plugins/sprout-icon.svg" width="72">
+  <img src="https://sprout.barrelstrengthdesign.com/content/plugins/sprout-icon.svg" width="72" align="right">
 </a>
