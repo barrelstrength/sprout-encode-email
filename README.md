@@ -1,37 +1,26 @@
-# Sprout Encode Email plugin for Craft CMS 3.x
+Sprout Encode Email
+===================
 
-Protect email addresses in your templates from robots.
+Encode the email addresses in your templates so they can't be harvested by evil spam bots.
 
-![Screenshot](resources/img/plugin-logo.png)
+----
 
-## Installation
+## Getting Started 
 
-To install Sprout Encode Email, follow these steps:
+### Requirements
 
-1. Download & unzip the file and place the `sproutencodeemail` directory into your `craft/plugins` directory
-2.  -OR- do a `git clone ???` directly into your `craft/plugins` folder.  You can then update it with `git pull`
-3.  -OR- install with Composer via `composer require /sprout-encode-email`
-4. Install plugin in the Craft Control Panel under Settings > Plugins
-5. The plugin folder should be named `sproutencodeemail` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
+This plugin requires Craft CMS 3.0.0-RC1 or later.
 
-Sprout Encode Email works on Craft 3.x.
+### Installation
 
-## Sprout Encode Email Overview
+To install the plugin, follow these instructions.
 
--Insert text here-
+1. Open your terminal and go to your Craft project:
 
-## Configuring Sprout Encode Email
+        cd /path/to/project
 
--Insert text here-
+2. Then tell Composer to load the plugin:
 
-## Using Sprout Encode Email
+        composer require barrelstrength/sprout-encode-email
 
--Insert text here-
-
-## Sprout Encode Email Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
-
-Brought to you by [Barrel Strength Design](http://barrelstrengthdesign.com)
+3. In the Control Panel, go to _Settings → Plugins_ and click the “Install” button for Sprout Encode Email.
