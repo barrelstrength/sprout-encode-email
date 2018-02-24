@@ -5,7 +5,7 @@ namespace barrelstrength\sproutencodeemail\services;
 use craft\base\Component;
 use Craft;
 
-class Utilities extends Component
+class Encode extends Component
 {
     /**
      * @var int
@@ -20,7 +20,7 @@ class Utilities extends Component
      *
      * @return mixed          An encoded string and javascript decoder function
      */
-    public function encodeStringRot13($string)
+    public function encodeRot13($string)
     {
         $rot13encryptedString = str_replace('"', '\"', str_rot13($string));
 

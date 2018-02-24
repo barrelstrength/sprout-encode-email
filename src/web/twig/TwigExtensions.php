@@ -38,7 +38,7 @@ class TwigExtensions extends \Twig_Extension
      */
     public function getEncode($string)
     {
-        return SproutEncodeEmail::$app->utilities->encodeStringRot13($string);
+        return SproutEncodeEmail::$app->encode->encodeRot13($string);
     }
 
     /**
@@ -50,7 +50,7 @@ class TwigExtensions extends \Twig_Extension
      */
     public function getRot13($string)
     {
-        return SproutEncodeEmail::$app->utilities->encodeStringRot13($string);
+        return SproutEncodeEmail::$app->encode->encodeRot13($string);
     }
 
     /**
@@ -62,6 +62,6 @@ class TwigExtensions extends \Twig_Extension
      */
     public function getEntities($string)
     {
-        return SproutEncodeEmail::$app->utilities->encodeHtmlEntities($string);
+        return SproutEncodeEmail::$app->encode->encodeHtmlEntities($string);
     }
 }

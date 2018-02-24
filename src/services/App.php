@@ -28,12 +28,12 @@ use craft\base\Component;
 class App extends Component
 {
     /**
-     * @var Utilities
+     * @var Encode
      */
-    public $utilities;
+    public $encode;
 
     public function init()
     {
-        $this->utilities = new Utilities();
+        $this->encode = new Encode();
     }
 }
