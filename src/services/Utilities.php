@@ -1,10 +1,10 @@
 <?php
 namespace barrelstrength\sproutencodeemail\services;
 
-use Craft\BaseApplicationComponent;
+use craft\base\Component;
 use Craft;
 
-class Utilities extends BaseApplicationComponent
+class Utilities extends Component
 {
     /**
      * @var int
@@ -19,16 +19,15 @@ class Utilities extends BaseApplicationComponent
      *
      * @return mixed          An encoded string and javascript decoder function
      */
-    private function encodeStringRot13($string)
+    public function encodeStringRot13($string)
     {
-        ;
         $rot13encryptedString = str_replace('"', '\"', str_rot13($string));
 
-        $uniqueId = uniqid('', true);
+        $uniqueId = uniqid('sproutencodeemail-', true);
         $countId = $this->count++;
         $ajaxId = Craft::$app->getRequest()->isAjax ? '-ajax' : '';
 
-        $encodeId = 'sproutencodeemail-'.$uniqueId.'-'.$countId.$ajaxId;
+        $encodeId = $uniqueId.'-'.$countId.$ajaxId;
 
         $encodedString = '
 <span id="'.$encodeId.'"></span>
@@ -50,7 +49,7 @@ class Utilities extends BaseApplicationComponent
      *
      * @return mixed          Returns a string converted to html entities
      */
-    private function encodeHtmlEntities($string)
+    public function encodeHtmlEntities($string)
     {
         $string = mb_convert_encoding($string, 'UTF-32', 'UTF-8');
         $t = unpack('N*', $string);

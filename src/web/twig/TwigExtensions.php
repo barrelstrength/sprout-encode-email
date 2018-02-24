@@ -4,16 +4,9 @@ namespace barrelstrength\sproutencodeemail\web\twig;
 
 use barrelstrength\sproutencodeemail\SproutEncodeEmail;
 use Craft;
-use Twig_Extension;
-use Twig_SimpleFunction;
 
-class TwigExtensions extends Twig_Extension
+class TwigExtensions extends \Twig_Extension
 {
-    /**
-     * @var int
-     */
-    private $count = 1;
-
     /**
      * @return string
      */
@@ -27,12 +20,12 @@ class TwigExtensions extends Twig_Extension
      *
      * @return array
      */
-    public function getFunctions()
+    public function getFilters()
     {
         return [
-            new Twig_SimpleFunction('encode', [$this, 'encode'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('rot13', [$this, 'rot13'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('entities', [$this, 'entities'], ['is_safe' => ['html']])
+            new \Twig_SimpleFilter('encode', [$this, 'getEncode'], ['is_safe' => ['html']]),
+            new \Twig_SimpleFilter('rot13', [$this, 'getRot13'], ['is_safe' => ['html']]),
+            new \Twig_SimpleFilter('entities', [$this, 'getEntities'], ['is_safe' => ['html']])
         ];
     }
 
@@ -44,7 +37,7 @@ class TwigExtensions extends Twig_Extension
      *
      * @return mixed          Returns Rot13 encoded string
      */
-    public function encode($string)
+    public function getEncode($string)
     {
         return SproutEncodeEmail::$app->utilities->encodeStringRot13($string);
     }
@@ -56,7 +49,7 @@ class TwigExtensions extends Twig_Extension
      *
      * @return mixed          Returns Rot13 encoded string
      */
-    public function rot13($string)
+    public function getRot13($string)
     {
         return SproutEncodeEmail::$app->utilities->encodeStringRot13($string);
     }
@@ -68,7 +61,7 @@ class TwigExtensions extends Twig_Extension
      *
      * @return mixed          Returns string encoded as HTML Entities
      */
-    public function entities($string)
+    public function getEntities($string)
     {
         return SproutEncodeEmail::$app->utilities->encodeHtmlEntities($string);
     }
