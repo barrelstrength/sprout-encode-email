@@ -5,22 +5,36 @@ Encode the email addresses in your templates so they can't be harvested by evil 
 
 ----
 
-## Getting Started 
+## Usage
 
-### Requirements
+The `rot13` filter (and the easier to remember `encode` filter) encode the string you pass to them using the Rot13 cipher and return a javascript tag to decode the string on the page.
 
-This plugin requires Craft CMS 3.0.0-RC1 or later.
+``` twig
+{% set email = "<a href='mailto:you@example.com'>Your Name</a>" %}
 
-### Installation
+{{ email | encode }}
+{{ email | rot13 }}
+```
 
-To install the plugin, follow these instructions.
+The `entities` filter encodes your content into HTML Entities.
 
-1. Open your terminal and go to your Craft project:
+``` twig
+<a href='{{ "mailto:you@example.com" | entities }}'>Your Name</a>
+```
 
-        cd /path/to/project
+----
 
-2. Then tell Composer to load the plugin:
+## Documentation
 
-        composer require barrelstrength/sprout-encode-email
+See the [Sprout Encode Email](https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/docs) for documentation, guides, and additional resources. 
 
-3. In the Control Panel, go to _Settings → Plugins_ and click the “Install” button for Sprout Encode Email.
+## Support
+
+- [Send a Support Ticket](https://sprout.barrelstrengthdesign.com/craft-plugins/request/support) via the Sprout Website.
+- [Create an issue](https://github.com/barrelstrength/craft-sprout-encode-email/issues) on Github.
+
+----
+
+<a href="https://sprout.barrelstrengthdesign.com" target="_blank">
+  <img src="https://sprout.barrelstrengthdesign.com/content/plugins/sprout-icon.svg">
+</a>
