@@ -1,4 +1,5 @@
 <?php
+
 namespace barrelstrength\sproutencodeemail\services;
 
 use craft\base\Component;

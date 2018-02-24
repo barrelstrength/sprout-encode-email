@@ -3,7 +3,6 @@
 namespace barrelstrength\sproutencodeemail\web\twig;
 
 use barrelstrength\sproutencodeemail\SproutEncodeEmail;
-use Craft;
 
 class TwigExtensions extends \Twig_Extension
 {

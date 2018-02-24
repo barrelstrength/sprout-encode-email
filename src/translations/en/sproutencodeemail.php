@@ -1,12 +1,4 @@
 <?php
-/**
- * Sprout Encode Email plugin for Craft CMS 3.x
- *
- * Protect email addresses in your templates from robots.
- *
- * @link      http://barrelstrengthdesign.com
- * @copyright Copyright (c) 2017 Barrel Strength Design
- */
 
 /**
  * Sprout Encode Email en Translation
@@ -20,6 +12,4 @@
  * @package   SproutEncodeEmail
  * @since     3
  */
-return [
-    'plugin loaded' => 'plugin loaded',
-];
+return [];
