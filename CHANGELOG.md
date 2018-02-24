@@ -1,7 +1,14 @@
 # Changelog
 
+## 2.0.1 - 2018-02-24
+
+### Changed
+- Updates examples
+- Various code cleanup
+
 ## 2.0.0 - 2018-02-24
 
+### Added
 - Craft 3 compatibility
 
 ## 1.2.2 - 2016-01-14
