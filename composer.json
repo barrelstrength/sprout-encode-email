@@ -34,16 +34,12 @@
   "extra": {
     "name": "Sprout Encode Email",
     "handle": "sprout-encode-email",
-    "schemaVersion": "2.0.0",
     "developer": "Barrel Strength",
     "developerUrl": "https://barrelstrengthdesign.com",
     "documentationUrl": "https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email",
     "changelogUrl": "https://raw.githubusercontent.com/barrelstrength/sprout-encode-email/master/CHANGELOG.md",
     "downloadUrl": "https://github.com/barrelstrength/sprout-encode-email/archive/master.zip",
-    "class": "barrelstrength\\sproutencodeemail\\SproutEncodeEmail",
-    "components": {
-      "app": "barrelstrength\\sproutencodeemail\\services\\App"
-    }
+    "class": "barrelstrength\\sproutencodeemail\\SproutEncodeEmail"
   }
 }
 
