@@ -1,8 +1,16 @@
 # Changelog
 
+## 2.0.3 - 2018-05-15
+
+### Changed
+- Moved schema and component definitions to Plugin class
+
+### Fixed
+- Fixed potential icon display issue
+
 ## 2.0.2 - 2018-04-03
 
-## Changed
+### Changed
 - Fixed potential conflicts with svg icon styles
 
 ## 2.0.1 - 2018-02-24
