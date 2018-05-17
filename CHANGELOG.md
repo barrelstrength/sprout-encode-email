@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.3 - 2018-05-15
+## 2.0.4 - 2018-05-15
 
 ### Changed
 - Moved schema and component definitions to Plugin class
