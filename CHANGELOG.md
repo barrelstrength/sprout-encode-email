@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.5 - 2019-07-24
+
+## Fixed
+- Fixed icon display issue
+- Updated to use registerTwigExtension
+
 ## 2.0.4 - 2018-05-15
 
 ### Changed
