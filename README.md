@@ -11,7 +11,7 @@ http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email
 
 Sprout Encode Email Updates
 ------------------------------------------------------------
-http://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/updates
+https://sprout.barrelstrengthdesign.com/docs/support/changelog.html
 
 
 Sprout Encode Email
@@ -22,9 +22,3 @@ https://craftcms.stackexchange.com/
 
 Via Email:
 Send us a note at: sprout@barrelstrengthdesign.com
-
-
-Sprout Encode Email License Terms
-------------------------------------------------------------
-Use of Sprout Encode Email is subject to the license agreement available here:
-http://sprout.barrelstrengthdesign.com/license

@@ -1,0 +1,55 @@
+[
+  {
+    "version": "1.3.0",
+    "downloadUrl": "https://github.com/barrelstrength/craft-sprout-encode-email/archive/v1.3.0.zip",
+    "date": "2018-07-28T08:00:00+00:00",
+    "notes": [
+      "[Improved] Moved release feed to Github"
+    ]
+  },
+  {
+    "version": "1.2.2",
+    "downloadUrl": "https://github.com/barrelstrength/craft-sprout-encode-email/releases",
+    "date": "2016-01-14T12:00:00+00:00",
+    "notes": [
+      "[Fixed] Fixed rendering issue, updated encoding to use `&lt;span&gt;` instead of `&lt;div&gt;`"
+    ]
+  },
+  {
+    "version": "1.2.1",
+    "downloadUrl": "https://github.com/barrelstrength/craft-sprout-encode-email/releases",
+    "date": "2015-12-31T10:00:00+00:00",
+    "notes": [
+      "[Added] Added support for rot13 filter when using ajax requests",
+      "[Improved] Updated deprecated `hookAddTwigExtension()` to use `addTwigExtension()`"
+    ]
+  },
+  {
+    "version": "1.2.0",
+    "downloadUrl": "https://github.com/barrelstrength/craft-sprout-encode-email/releases",
+    "date": "2015-12-02T08:00:00+00:00",
+    "notes": [
+      "[Added] Added Plugin icon",
+      "[Added] Added Plugin description",
+      "[Added] Added link to documentation",
+      "[Added] Added link to plugin settings",
+      "[Added] Added link to release feed"
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "downloadUrl": "https://github.com/barrelstrength/craft-sprout-encode-email/releases",
+    "date": "2014-03-14T15:13:00+00:00",
+    "notes": [
+      "[Fixed] Updated class name from `encodeemail` to `sproutencodeemail`"
+    ]
+  },
+  {
+    "version": "1.0.0",
+    "downloadUrl": "https://github.com/barrelstrength/craft-sprout-encode-email/releases",
+    "date": "2014-01-11T20:46:00+00:00",
+    "notes": [
+      "[Added] Public Beta"
+    ]
+  }
+]

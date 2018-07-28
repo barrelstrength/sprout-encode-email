@@ -15,7 +15,7 @@ class SproutEncodeEmailPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.2.2';
+        return '1.3.0';
     }
 
     public function getDeveloper()
@@ -35,7 +35,7 @@ class SproutEncodeEmailPlugin extends BasePlugin
 
     public function getReleaseFeedUrl()
     {
-        return 'https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/releases.json';
+        return 'https://raw.githubusercontent.com/barrelstrength/craft-sprout-encode-email/v1/releases.json';
     }
 
     public function hasCpSection()
