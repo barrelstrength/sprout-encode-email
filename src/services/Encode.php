@@ -16,7 +16,7 @@ class Encode extends Component
      * Returns a rot13 encrypted string as well as a JavaScript decoder function.
      * http://snipplr.com/view/6037/
      *
-     * @param  string $string Value to be encoded
+     * @param string $string Value to be encoded
      *
      * @return mixed          An encoded string and javascript decoder function
      */
@@ -46,7 +46,7 @@ class Encode extends Component
      * Returns a string converted to html entities
      * http://goo.gl/LPhtJ
      *
-     * @param  string $string Value to be encoded
+     * @param string $string Value to be encoded
      *
      * @return mixed          Returns a string converted to html entities
      */
@@ -54,7 +54,7 @@ class Encode extends Component
     {
         $string = mb_convert_encoding($string, 'UTF-32', 'UTF-8');
         $t = unpack('N*', $string);
-        $t = array_map(function($n) {
+        $t = array_map(static function($n) {
             return "&#$n;";
         }, $t);
 

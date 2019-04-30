@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.6 - 2019-04-29
+
+## Changed
+- Updated icon
+
 ## 2.0.5 - 2019-07-24
 
 ## Fixed

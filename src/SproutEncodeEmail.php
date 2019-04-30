@@ -6,13 +6,14 @@ use barrelstrength\sproutencodeemail\services\App;
 use Craft;
 use craft\base\Plugin;
 use barrelstrength\sproutencodeemail\web\twig\TwigExtensions;
+use yii\base\InvalidConfigException;
 
 class SproutEncodeEmail extends Plugin
 {
     /**
      * Enable use of SproutEncodeEmail::$app-> in place of Craft::$app->
      *
-     * @var \barrelstrength\sproutencodeemail\services\App
+     * @var App
      */
     public static $app;
 
@@ -22,7 +23,7 @@ class SproutEncodeEmail extends Plugin
     public $schemaVersion = '2.0.0';
 
     /**
-     * @throws \yii\base\InvalidConfigException
+     * @throws InvalidConfigException
      */
     public function init()
     {
@@ -34,6 +35,6 @@ class SproutEncodeEmail extends Plugin
 
         self::$app = $this->get('app');
 
-            Craft::$app->view->registerTwigExtension(new TwigExtensions());
+        Craft::$app->view->registerTwigExtension(new TwigExtensions());
     }
 }

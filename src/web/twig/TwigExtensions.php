@@ -3,13 +3,15 @@
 namespace barrelstrength\sproutencodeemail\web\twig;
 
 use barrelstrength\sproutencodeemail\SproutEncodeEmail;
+use Twig_Extension;
+use Twig_SimpleFilter;
 
-class TwigExtensions extends \Twig_Extension
+class TwigExtensions extends Twig_Extension
 {
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return 'Sprout Encode Email';
     }
@@ -19,12 +21,12 @@ class TwigExtensions extends \Twig_Extension
      *
      * @return array
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
-            new \Twig_SimpleFilter('encode', [$this, 'getEncode'], ['is_safe' => ['html']]),
-            new \Twig_SimpleFilter('rot13', [$this, 'getRot13'], ['is_safe' => ['html']]),
-            new \Twig_SimpleFilter('entities', [$this, 'getEntities'], ['is_safe' => ['html']])
+            new Twig_SimpleFilter('encode', [$this, 'getEncode'], ['is_safe' => ['html']]),
+            new Twig_SimpleFilter('rot13', [$this, 'getRot13'], ['is_safe' => ['html']]),
+            new Twig_SimpleFilter('entities', [$this, 'getEntities'], ['is_safe' => ['html']])
         ];
     }
 
@@ -32,7 +34,7 @@ class TwigExtensions extends \Twig_Extension
      * Encode string using Rot13.  This function does the same as the Rot13 function
      * and only exists as it may be easier for some folks to remember 'encode'
      *
-     * @param  string $string Value to be encoded
+     * @param string $string Value to be encoded
      *
      * @return mixed          Returns Rot13 encoded string
      */
@@ -44,7 +46,7 @@ class TwigExtensions extends \Twig_Extension
     /**
      * Encode string using Rot13.
      *
-     * @param  string $string Value to be encoded
+     * @param string $string Value to be encoded
      *
      * @return mixed          Returns Rot13 encoded string
      */
@@ -56,7 +58,7 @@ class TwigExtensions extends \Twig_Extension
     /**
      * Encode string using HTML Entities.
      *
-     * @param  string $string Value to be encoded
+     * @param string $string Value to be encoded
      *
      * @return mixed          Returns string encoded as HTML Entities
      */
