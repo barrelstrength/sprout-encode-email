@@ -20,7 +20,7 @@
     "email": "support@barrelstrengthdesign.com",
     "issues": "https://github.com/barrelstrength/sprout-encode-email/issues?state=open",
     "source": "https://github.com/barrelstrength/sprout-encode-email",
-    "docs": "https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email/docs",
+    "docs": "https://sprout.barrelstrengthdesign.com/docs/encode-email",
     "rss": "https://github.com/barrelstrength/sprout-encode-email/commits/v2.atom"
   },
   "require": {
@@ -35,10 +35,7 @@
     "name": "Sprout Encode Email",
     "handle": "sprout-encode-email",
     "developer": "Barrel Strength",
-    "developerUrl": "https://barrelstrengthdesign.com",
-    "documentationUrl": "https://sprout.barrelstrengthdesign.com/craft-plugins/encode-email",
-    "changelogUrl": "https://raw.githubusercontent.com/barrelstrength/sprout-encode-email/master/CHANGELOG.md",
-    "downloadUrl": "https://github.com/barrelstrength/sprout-encode-email/archive/master.zip",
+    "documentationUrl": "https://sprout.barrelstrengthdesign.com/docs/encode-email",
     "class": "barrelstrength\\sproutencodeemail\\SproutEncodeEmail"
   }
 }
