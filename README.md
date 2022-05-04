@@ -1,5 +1,13 @@
 # Sprout Encode Email
 
+## Status
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+In an effort to reduce the number of packages we publicly maintain, Sprout Encode Email will not be migrated to Craft 4. If you'd like to take the helm or take responsibility over maintaining the repository please reach out: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com).
+
+## Overview
+
 Encode the email addresses in your templates so they can't be harvested by evil spam bots.
 
 - [Documentation](https://sprout.barrelstrengthdesign.com/docs/encode-email/)
