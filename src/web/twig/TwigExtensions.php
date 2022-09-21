@@ -3,10 +3,10 @@
 namespace barrelstrength\sproutencodeemail\web\twig;
 
 use barrelstrength\sproutencodeemail\SproutEncodeEmail;
-use Twig_Extension;
-use Twig_SimpleFilter;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
-class TwigExtensions extends Twig_Extension
+class TwigExtensions extends AbstractExtension
 {
     /**
      * @return string
@@ -24,9 +24,9 @@ class TwigExtensions extends Twig_Extension
     public function getFilters(): array
     {
         return [
-            new Twig_SimpleFilter('encode', [$this, 'getEncode'], ['is_safe' => ['html']]),
-            new Twig_SimpleFilter('rot13', [$this, 'getRot13'], ['is_safe' => ['html']]),
-            new Twig_SimpleFilter('entities', [$this, 'getEntities'], ['is_safe' => ['html']])
+            new TwigFilter('encode', [$this, 'getEncode'], ['is_safe' => ['html']]),
+            new TwigFilter('rot13', [$this, 'getRot13'], ['is_safe' => ['html']]),
+            new TwigFilter('entities', [$this, 'getEntities'], ['is_safe' => ['html']])
         ];
     }
 

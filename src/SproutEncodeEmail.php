@@ -20,7 +20,7 @@ class SproutEncodeEmail extends Plugin
     /**
      * @var string
      */
-    public $schemaVersion = '2.0.0';
+    public string $schemaVersion = '2.0.0';
 
     /**
      * @throws InvalidConfigException

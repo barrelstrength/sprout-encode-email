@@ -32,7 +32,7 @@ class App extends Component
      */
     public $encode;
 
-    public function init()
+    public function init() :void
     {
         $this->encode = new Encode();
     }
