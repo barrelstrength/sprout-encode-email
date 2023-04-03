@@ -3,6 +3,7 @@
   "description": "Encode the email addresses in your templates so they can't be harvested by evil spam bots.",
   "version": "2.0.7",
   "type": "craft-plugin",
+  "abandoned": "miranj/craft-obfuscator",
   "keywords": [
     "craftcms",
     "twig",
